@@ -20,6 +20,11 @@ pipeline {
             }
         }
         
+        stage('Deploy') {
+            steps {
+                sh 'echo "Hello Deploy"'
+            }
+        }        
     post {
         always {
             echo 'This will always run'
